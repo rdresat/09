@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display none</title>
+    <style>
+        .img{
+            width: 50px;
+        }
+        .box{
+            width: 80½;
+            border: 1px solid blue;
+            margin: 20px;
+
+        }
+        #container{
+            text-align: center;
+            border: 2px solid red;
+            width: 40%;
+            min-width: 300px;
+        }
+    </style>
+    <script>
+        function Sil(){
+            document.getElementById('box1').style.display='none';
+        }
+        function Gizle(){
+            document.getElementById('box2').style.visibility='hidden';
+        }    
+            function Reset(){
+            document.getElementById('box1').style.display='block';
+            document.getElementById('box2').style.visibility='visible';
+        }
+        
+        
+    </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Display none</h1>
+
+    <div id="container">
+        <div class="box" id="box1">
+            <p>display:none</p>
+            <img class="img" src="/09/armut.jpeg" alt="Armut">
+            <p><button onclick="Sil()">Sil</button></p>
+
+        </div>
+        <div class="box" id="box2">
+            <p>visibility:hidden</p>
+            <img class="img" src="/09/armut.jpeg" alt="Armut">
+            <p><button onclick="Gizle()">Gizle</button></p>
+
+        </div>
+        <div class="box">
+            <p>reset</p>
+            <img class="img" src="/09/armut.jpeg" alt="Armut">
+            <p><button onclick="Reset()">Resetle</button></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
